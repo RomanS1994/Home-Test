@@ -147,3 +147,43 @@
 // }
 
 // console.log(chainToSwitch(99));
+
+/****** Підрахунок карт ******/
+// let count = 0;
+
+// function cardCount(card) {
+//   switch (card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       break;
+//     case 10:
+//     case "J":
+//     case "Q":
+//     case "K":
+//     case "A":
+//       count--;
+//       break;
+//   }
+
+//   let result = count + " ";
+//   if (count > 0) {
+//     result += "Bet";
+//   } else {
+//     result += "Hold";
+//   }
+
+//   return result;
+// }
+
+// console.log(cardCount(2));
+// console.log(cardCount(7));
+// console.log(cardCount("K"));
+// console.log(cardCount(4));
