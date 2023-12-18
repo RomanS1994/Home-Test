@@ -1,5 +1,4 @@
 /****** Задача If ******/
-
 // function testSize(num) {
 //   // Змініть код лише під цим рядком
 //   if (num < 5) {
@@ -19,7 +18,6 @@
 // console.log(testSize(13));
 
 /****** Задача Гольф ******/
-
 // const names = [
 //   "Hole-in-one!",
 //   "Eagle",
@@ -51,7 +49,6 @@
 // console.log(golfScore(4, 4));
 
 /****** Вибір із багатьох варіантів за допомогою інструкцій switch ******/
-
 // function caseInSwitch(val) {
 //   let answer = "";
 
@@ -75,7 +72,6 @@
 // console.log(caseInSwitch(4));
 
 /****** Додавання опції за замовчуванням у операторах Switch ******/
-
 // function switchOfStuff(val) {
 //   let answer = "";
 //   // Only change code below this line
@@ -99,3 +95,55 @@
 // }
 
 // console.log(switchOfStuff("b"));
+
+/******Обробка ідентичних параметрів в інструкціях switch ******/
+// function sequentialSizes(val) {
+//   let answer = "";
+//   // Змініть код лише під цим рядком
+//   switch (val) {
+//     case 1:
+//     case 2:
+//     case 3:
+//       answer = "Low";
+//       break;
+//     case 4:
+//     case 5:
+//     case 6:
+//       answer = "Mid";
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       answer = "High";
+//   }
+//   // Змініть код лише над цим рядком
+//   return answer;
+// }
+// console.log(sequentialSizes(1));
+
+/****** Заміна ланцюжків if else на switch ******/
+// function chainToSwitch(val) {
+//   let answer = "";
+//   // Змініть код лише під цим рядком
+//   switch (val) {
+//     case "bob":
+//       answer = "Marley";
+//       break;
+//     case 42:
+//       answer = "The Answer";
+//       break;
+//     case 1:
+//       answer = "There is no #1";
+//       break;
+//     case 99:
+//       answer = "Missed me by this much!";
+//       break;
+//     case 7:
+//       answer = "Ate Nine";
+//   }
+
+//   // Змініть код лише над цим рядком
+//   return answer;
+// }
+
+// console.log(chainToSwitch(99));
