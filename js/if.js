@@ -208,22 +208,94 @@
 
 // phoneticLookup("charlie");
 
-// Налаштування
-function phoneticLookup(val) {
-  let result = "";
+// // Налаштування
+// function phoneticLookup(val) {
+//   let result = "";
 
-  // Змініть код лише під цим рядком
-  const lookup = {
-    alpha: "Adams",
-    bravo: "Boston",
-    charlie: "Chicago",
-    delta: "Denver",
-    echo: "Easy",
-    foxtrot: "Frank",
-  };
-  result = lookup["val"];
-  // Змініть код лише над цим рядком
-  return result;
+//   // Змініть код лише під цим рядком
+//   const lookup = {
+//     alpha: "Adams",
+//     bravo: "Boston",
+//     charlie: "Chicago",
+//     delta: "Denver",
+//     echo: "Easy",
+//     foxtrot: "Frank",
+//   };
+//   result = lookup["val"];
+//   // Змініть код лише над цим рядком
+//   return result;
+// }
+
+// phoneticLookup("charlie");
+
+/****** Маніпулювання складними об’єктами ******/
+// const myMusic = [
+//   {
+//     artist: "Billy Joel",
+//     title: "Piano Man",
+//     release_year: 1973,
+//     formats: ["CD", "8T", "LP"],
+//     gold: true,
+//   },
+// ];
+
+/****** Доступ до вкладених масивів ******/
+
+// const ourPets = [
+//   {
+//     animalType: "cat",
+//     names: ["Meowzer", "Fluffy", "Kit-Cat"],
+//   },
+//   {
+//     animalType: "dog",
+//     names: ["Spot", "Bowser", "Frankie"],
+//   },
+// ];
+
+// ourPets[0].names[1];
+// ourPets[1].names[0];
+
+// const myPlants = [
+//   {
+//     type: "flowers",
+//     list: ["rose", "tulip", "dandelion"],
+//   },
+//   {
+//     type: "trees",
+//     list: ["fir", "pine", "birch"],
+//   },
+// ];
+
+/****** Колекція музичних альбомів ******/
+
+// Налаштування
+const recordCollection = {
+  2548: {
+    albumTitle: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
+  },
+  2468: {
+    albumTitle: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    albumTitle: "ABBA Gold",
+  },
+};
+
+// Змініть код лише під цим рядком
+function updateRecords(records, id, prop, value) {
+  if (value === "") {
+    return records.delete(prop);
+  }
+
+  return records;
 }
 
-phoneticLookup("charlie");
+updateRecords(recordCollection, 5439, "artist", "ABBA");
