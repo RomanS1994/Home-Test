@@ -240,7 +240,6 @@
 // ];
 
 /****** Доступ до вкладених масивів ******/
-
 // const ourPets = [
 //   {
 //     animalType: "cat",
@@ -267,7 +266,6 @@
 // ];
 
 /****** Колекція музичних альбомів ******/
-
 // const recordCollection = {
 //   2548: {
 //     albumTitle: "Slippery When Wet",
@@ -306,8 +304,60 @@
 // console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
 
 /****** дебагер ******/
-
 // for (let i = 0; i <= 10; i++) {
 //   debugger;
 //   console.log(i);
 // }
+
+/****** Ітерація з циклами while у JavaScript ******/
+// const myArray = [];
+// let i = 0;
+// while (i <= 5) {
+//   myArray.unshift(i);
+//   i++;
+// }
+// // Змініть код лише під цим рядком
+// console.log(myArray);
+
+/****** Ітерація з циклами for у JavaScript ******/
+// const myArray = [];
+// for (let i = 0; i < 5; i++) {
+//   myArray.push(i);
+// }
+// // Змініть код лише під цим рядком
+// console.log(myArray);
+
+/****** Зворотний рахунок за допомогою циклу for ******/
+// const myArray = [];
+// for (let i = 9; i > 0; i -= 2) {
+//   myArray.push(i);
+// }
+// Змініть код лише під цим рядком
+// console.log(myArray);
+
+// const arr = [10, 9, 8, 7, 6];
+
+// for (let i = 0; i < arr.length; i++) {
+//   //   console.log(arr[i]);
+// }
+// const myArr = [2, 3, 4, 5, 6];
+// let total = 0;
+// for (let i = 0; i < myArr.length; i++) {
+//   total += myArr[i];
+// }
+// console.log(total);
+
+/****** Вкладення циклів for ******/
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Змініть код лише під цим рядком
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       product *= arr[i][j];
+//     }
+//   }
+//   // Змініть код лише над цим рядком
+//   return product;
+// }
+
+// console.log(multiplyAll([[1, 2], [3]]));
