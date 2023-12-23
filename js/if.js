@@ -361,3 +361,82 @@
 // }
 
 // console.log(multiplyAll([[1, 2], [3]]));
+
+/****** Цикл while ******/
+// let clientCounter = 2;
+// const maxClients = 24;
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+/****** Цикл do...while ******/
+// let password = "";
+
+// do {
+//   password = prompt("Ведіть пароль довший 4 символів");
+// } while (password.length < 5);
+// console.log("ввели пароль: ", password);
+
+/****** Заміна циклів за допомогою рекурсії ******/
+// function sum(arr, n) {
+//   // Змініть код лише під цим рядком
+//   if (n <= 0) {
+//     return 0;
+//   } else {
+//     return sum(arr, n - 1) + arr[n - 1];
+//   }
+//   // Змініть код лише над цим рядком
+// }
+// console.log(sum([1, 2, 4, 6, 3, 5], 3));
+
+// Налаштування
+
+/****** Пошук профілю ******/
+// const contacts = [
+//   {
+//     firstName: "Akira",
+//     lastName: "Laine",
+//     number: "0543236543",
+//     likes: ["Pizza", "Coding", "Brownie Points"],
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     number: "0994372684",
+//     likes: ["Hogwarts", "Magic", "Hagrid"],
+//   },
+//   {
+//     firstName: "Sherlock",
+//     lastName: "Holmes",
+//     number: "0487345643",
+//     likes: ["Intriguing Cases", "Violin"],
+//   },
+//   {
+//     firstName: "Kristian",
+//     lastName: "Vos",
+//     number: "unknown",
+//     likes: ["JavaScript", "Gaming", "Foxes"],
+//   },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   for (let i = 0; i < contacts.length; i++) {
+//     if (contacts[i].firstName === name) {
+//       // Знайдено контакт з ім'ям name
+//       if (contacts[i][prop] !== undefined) {
+//         // Знайдено властивість prop для знайденого контакту
+//         return contacts[i][prop];
+//       } else {
+//         // Властивість prop не знайдено для контакту з ім'ям name
+//         return "No such property";
+//       }
+//     }
+//   }
+
+//   // Контакт з ім'ям name не знайдено
+//   return "No such contact";
+// }
+
+// console.log(lookUpProfile("Bob", "number"));
