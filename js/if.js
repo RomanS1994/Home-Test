@@ -450,3 +450,13 @@
 // }
 
 // console.log(squareSum([1, 2]));
+
+/****** Фальшивий двійковий файл ******/
+// function fakeBin(x) {
+//   const arr = x.toString();
+//   return arr
+//     .split("")
+//     .map((n) => (n < 5 ? 0 : 1))
+//     .join("");
+// }
+// console.log(fakeBin(345632144));
