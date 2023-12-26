@@ -440,3 +440,13 @@
 // }
 
 // console.log(lookUpProfile("Bob", "number"));
+
+/****** Завершіть функцію суми квадратів, щоб вона звела в квадрат кожне передане їй число, а потім підсумувала результати.
+ ******/
+// function squareSum(numbers) {
+//   let sum = 0;
+//   numbers.map((number) => (sum += Math.pow(number, 2)));
+//   return sum;
+// }
+
+// console.log(squareSum([1, 2]));
