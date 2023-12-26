@@ -451,12 +451,29 @@
 
 // console.log(squareSum([1, 2]));
 
-/****** Фальшивий двійковий файл ******/
-// function fakeBin(x) {
-//   const arr = x.toString();
-//   return arr
-//     .split("")
-//     .map((n) => (n < 5 ? 0 : 1))
-//     .join("");
-// }
-// console.log(fakeBin(345632144));
+/****** Напишіть функцію, яка приймає рядок фігурних дужок і визначає, чи правильний порядок дужок. Він повинен повернути true, якщо рядок дійсний, а falseякщо він недійсний. ******/
+
+function isValidBrackets(s) {
+  const stack = [];
+  const openingBrackets = "({[";
+  const closingBrackets = ")}]";
+
+  for (let i = 0; i < s.length; i++) {
+    const currentBracket = s[i];
+    if (openingBrackets.includes(currentBracket)) {
+      stack.push(currentBracket);
+    } else if (closingBrackets.includes(currentBracket)) {
+      const lastOpeningBracket = stack.pop();
+      console.log(lastOpeningBracket);
+      if (
+        openingBrackets.indexOf(lastOpeningBracket) !==
+        closingBrackets.indexOf(currentBracket)
+      ) {
+        return false; // Неспівпадіння в парах
+      }
+    }
+  }
+
+  return stack.length === 0; // Перевірка, чи стек порожній
+}
+console.log(isValidBrackets("()))"));
