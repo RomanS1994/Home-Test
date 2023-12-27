@@ -478,21 +478,36 @@
 // console.log(isValidBrackets("()))"));
 
 /****** practic freCodeCamp ******/
-const result = {
-  success: ["max-length", "no-amd", "prefer-arrow-functions"],
-  failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["no-extra-semi", "no-dup-keys"],
-};
+// const result = {
+//   success: ["max-length", "no-amd", "prefer-arrow-functions"],
+//   failure: ["no-var", "var-on-top", "linebreak"],
+//   skipped: ["no-extra-semi", "no-dup-keys"],
+// };
 
-function makeList(arr) {
-  const failureItems = [];
+// function makeList(arr) {
+//   const failureItems = [];
 
-  for (const item of arr) {
-    failureItems.push(`<li class="text-warning">${item}</li>`);
+//   for (const item of arr) {
+//     failureItems.push(`<li class="text-warning">${item}</li>`);
+//   }
+
+//   return failureItems;
+// }
+
+// const failuresList = makeList(result.failure);
+// console.log(failuresList);
+
+/****** practic freCodeCamp2 ******/
+
+class User {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
   }
-
-  return failureItems;
 }
+// console.log(User);
 
-const failuresList = makeList(result.failure);
-console.log(failuresList);
+const userRoman = new User("Roman", "rssdf");
+const userMihal = new User("Mihal", "ef");
+console.log(userRoman);
+console.log(userMihal);
