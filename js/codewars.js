@@ -61,38 +61,38 @@
 // console.log(isIsogram("sdsda"));
 
 /****** функцію обчислює індекс маси тіла (bmi = вага / зріст 2 ). ******/
-function bmi(weight, height) {
-  const degrees = Math.pow(height, 2);
-  const value = Math.round(weight / degrees);
-  if (value <= 18.5) {
-    return "Underweight";
-  } else if (value <= 25.0) {
-    return "Normal";
-  } else if (value <= 30.0) {
-    return "Overweight";
-  } else {
-    return "Obese";
-  }
-}
+// function bmi(weight, height) {
+//   const degrees = Math.pow(height, 2);
+//   const value = weight / degrees;
+//   if (value <= 18.5) {
+//     return "Underweight";
+//   } else if (value <= 25.0) {
+//     return "Normal";
+//   } else if (value <= 30.0) {
+//     return "Overweight";
+//   } else {
+//     return "Obese";
+//   }
+// }
 
-console.log(bmi(80, 1.8));
+// console.log(bmi(80, 1.8));
 
-/****** swich ******/
-function bmi(weight, height) {
-  const degrees = Math.pow(height, 2);
-  const value = weight / degrees;
-  console.log(value);
+// /****** swich ******/
+// function bmi(weight, height) {
+//   const degrees = Math.pow(height, 2);
+//   const value = weight / degrees;
+//   console.log(value);
 
-  switch (true) {
-    case value <= 18.5:
-      return "Underweight";
-    case value <= 25.0:
-      return "Normal";
-    case value <= 30.0:
-      return "Overweight";
-    default:
-      return "Obese";
-  }
-}
+//   switch (true) {
+//     case value <= 18.5:
+//       return "Underweight";
+//     case value <= 25.0:
+//       return "Normal";
+//     case value <= 30.0:
+//       return "Overweight";
+//     default:
+//       return "Obese";
+//   }
+// }
 
-console.log(bmi(80, 1.8));
+// console.log(bmi(80, 1.8));
