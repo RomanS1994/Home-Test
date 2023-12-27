@@ -453,27 +453,27 @@
 
 /****** Напишіть функцію, яка приймає рядок фігурних дужок і визначає, чи правильний порядок дужок. Він повинен повернути true, якщо рядок дійсний, а falseякщо він недійсний. ******/
 
-function isValidBrackets(s) {
-  const stack = [];
-  const openingBrackets = "({[";
-  const closingBrackets = ")}]";
+// function isValidBrackets(s) {
+//   const stack = [];
+//   const openingBrackets = "({[";
+//   const closingBrackets = ")}]";
 
-  for (let i = 0; i < s.length; i++) {
-    const currentBracket = s[i];
-    if (openingBrackets.includes(currentBracket)) {
-      stack.push(currentBracket);
-    } else if (closingBrackets.includes(currentBracket)) {
-      const lastOpeningBracket = stack.pop();
-      console.log(lastOpeningBracket);
-      if (
-        openingBrackets.indexOf(lastOpeningBracket) !==
-        closingBrackets.indexOf(currentBracket)
-      ) {
-        return false; // Неспівпадіння в парах
-      }
-    }
-  }
+//   for (let i = 0; i < s.length; i++) {
+//     const currentBracket = s[i];
+//     if (openingBrackets.includes(currentBracket)) {
+//       stack.push(currentBracket);
+//     } else if (closingBrackets.includes(currentBracket)) {
+//       const lastOpeningBracket = stack.pop();
+//       console.log(lastOpeningBracket);
+//       if (
+//         openingBrackets.indexOf(lastOpeningBracket) !==
+//         closingBrackets.indexOf(currentBracket)
+//       ) {
+//         return false; // Неспівпадіння в парах
+//       }
+//     }
+//   }
 
-  return stack.length === 0; // Перевірка, чи стек порожній
-}
-console.log(isValidBrackets("()))"));
+//   return stack.length === 0; // Перевірка, чи стек порожній
+// }
+// console.log(isValidBrackets("()))"));
