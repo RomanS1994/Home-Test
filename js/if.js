@@ -452,7 +452,6 @@
 // console.log(squareSum([1, 2]));
 
 /****** Напишіть функцію, яка приймає рядок фігурних дужок і визначає, чи правильний порядок дужок. Він повинен повернути true, якщо рядок дійсний, а falseякщо він недійсний. ******/
-
 // function isValidBrackets(s) {
 //   const stack = [];
 //   const openingBrackets = "({[";
@@ -477,3 +476,23 @@
 //   return stack.length === 0; // Перевірка, чи стек порожній
 // }
 // console.log(isValidBrackets("()))"));
+
+/****** practic freCodeCamp ******/
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"],
+};
+
+function makeList(arr) {
+  const failureItems = [];
+
+  for (const item of arr) {
+    failureItems.push(`<li class="text-warning">${item}</li>`);
+  }
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failuresList);
