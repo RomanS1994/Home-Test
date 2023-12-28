@@ -498,16 +498,73 @@
 // console.log(failuresList);
 
 /****** practic freCodeCamp2 ******/
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+// }
+// // console.log(User);
 
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
+// const userRoman = new User("Roman", "rssdf");
+// const userMihal = new User("Mihal", "ef");
+// console.log(userRoman);
+// console.log(userMihal);
+
+// class Book {
+//   constructor(author) {
+//     this._author = author;
+//   }
+//   // getter
+//   get writer() {
+//     return this._author;
+//   }
+//   // setter
+//   set writer(updatedAuthor) {
+//     this._author = updatedAuthor;
+//   }
+// }
+// const novel = new Book("anonymous");
+// console.log(novel.writer);
+// novel.writer = "newAuthor";
+// console.log(novel.writer);
+
+/****** Гетери й сетери для управління доступом до об’єкта ******/
+// class Thermostat {
+//   constructor(fahrenheit) {
+//     this._fahrenheit = fahrenheit;
+//   }
+
+//   get temperature() {
+//     return (5 / 9) * (this._fahrenheit - 32);
+//   }
+
+//   set temperature(celsius) {
+//     this._fahrenheit = (celsius * 9.0) / 5 + 32;
+//   }
+// }
+// // Змініть код лише над цим рядком
+
+// const thermos = new Thermostat(76); // Налаштування у шкалі Фаренгейта
+// let temp = thermos.temperature; // 24.44 градусів за Цельсієм
+// thermos.temperature = 20;
+// temp = thermos.temperature; // 26 градусів за Цельсієм
+// console.log(temp);
+
+/****** Фільтрування списку ******/
+
+function filter_list(l) {
+  const array = [];
+  for (const value of l) {
+    if (typeof value === "number") {
+      array.push(value);
+    }
   }
+  return array;
 }
-// console.log(User);
+console.log(filter_list([1, 2, "a", "b"]));
 
-const userRoman = new User("Roman", "rssdf");
-const userMihal = new User("Mihal", "ef");
-console.log(userRoman);
-console.log(userMihal);
+/****** Фільтрування списку через Filter і стрілочну функцію******/
+const filter_list = (l) => l.filter((el) => typeof el === "number");
+
+console.log(filter_list([1, 2, "a", "b"]));
