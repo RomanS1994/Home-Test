@@ -597,25 +597,46 @@
 // console.log(result); // Виведе "abcdefklmopqwxy"
 
 /****** Залікова книжка ******/
-function getGrade(s1, s2, s3) {
-  const bal = (s1 + s2 + s3) / 3;
-  let value = "";
-  switch (true) {
-    case bal >= 90 && bal <= 100:
-      value = "A";
-      break;
-    case bal >= 80 && bal < 90:
-      value = "B";
-      break;
-    case bal >= 70 && bal <= 80:
-      value = "C";
-      break;
-    case bal >= 60 && bal <= 70:
-      value = "D";
-      break;
-    default:
-      value = "F";
+// function getGrade(s1, s2, s3) {
+//   const bal = (s1 + s2 + s3) / 3;
+//   let value = "";
+//   switch (true) {
+//     case bal >= 90 && bal <= 100:
+//       value = "A";
+//       break;
+//     case bal >= 80 && bal < 90:
+//       value = "B";
+//       break;
+//     case bal >= 70 && bal <= 80:
+//       value = "C";
+//       break;
+//     case bal >= 60 && bal <= 70:
+//       value = "D";
+//       break;
+//     default:
+//       value = "F";
+//   }
+//   return value;
+// }
+// console.log(getGrade(70, 70, 100));
+
+/****** Просте множення ******/
+// function simpleMultiplication(number) {
+//   console.log(number % 5);
+//   return number % 2 === 0 ? number * 8 : number * 9;
+// }
+// console.log(simpleMultiplication(14));
+
+/****** Підрахунок дублікатів ******/
+function duplicateCount(text) {
+  let counter = 0;
+  let array = "";
+  for (const letter of text) {
+    array += letter;
+    if (array.includes(letter)) {
+      counter++;
+    }
   }
-  return value;
+  return counter;
 }
-console.log(getGrade(70, 70, 100));
+console.log(duplicateCount("aabbcde"));
