@@ -552,19 +552,46 @@
 // console.log(temp);
 
 /****** Фільтрування списку ******/
-
-function filter_list(l) {
-  const array = [];
-  for (const value of l) {
-    if (typeof value === "number") {
-      array.push(value);
-    }
-  }
-  return array;
-}
-console.log(filter_list([1, 2, "a", "b"]));
+// function filter_list(l) {
+//   const array = [];
+//   for (const value of l) {
+//     if (typeof value === "number") {
+//       array.push(value);
+//     }
+//   }
+//   return array;
+// }
+// console.log(filter_list([1, 2, "a", "b"]));
 
 /****** Фільтрування списку через Filter і стрілочну функцію******/
-const filter_list = (l) => l.filter((el) => typeof el === "number");
+// const filter_list = (l) => l.filter((el) => typeof el === "number");
+// console.log(filter_list([1, 2, "a", "b"]));
 
-console.log(filter_list([1, 2, "a", "b"]));
+/****** Повернути Негативний ******/
+// function makeNegative(num) {
+//   return num > 0 ? -num : num;
+// }
+// console.log(makeNegative(1));
+// console.log(makeNegative(-5));
+// console.log(makeNegative(0));
+// console.log(makeNegative(0.12));
+
+function longest(s1, s2) {
+  // Об'єднати унікальні літери з обох рядків
+  const uniqueLetters = Array.from(new Set(s1 + s2));
+  console.log(uniqueLetters);
+  // Відсортувати літери
+  const sortedLetters = uniqueLetters.sort();
+
+  // З'єднати відсортовані літери в один рядок
+  const result = sortedLetters.join("");
+
+  return result;
+}
+
+// Приклад використання:
+const s1 = "xyaabbbccccdefww";
+const s2 = "xxxxyyyyabklmopq";
+
+const result = longest(s1, s2);
+console.log(result); // Виведе "abcdefklmopqwxy"
