@@ -576,22 +576,46 @@
 // console.log(makeNegative(0));
 // console.log(makeNegative(0.12));
 
-function longest(s1, s2) {
-  // Об'єднати унікальні літери з обох рядків
-  const uniqueLetters = Array.from(new Set(s1 + s2));
-  console.log(uniqueLetters);
-  // Відсортувати літери
-  const sortedLetters = uniqueLetters.sort();
+// function longest(s1, s2) {
+//   // Об'єднати унікальні літери з обох рядків
+//   const uniqueLetters = Array.from(new Set(s1 + s2));
+//   console.log(uniqueLetters);
+//   // Відсортувати літери
+//   const sortedLetters = uniqueLetters.sort();
 
-  // З'єднати відсортовані літери в один рядок
-  const result = sortedLetters.join("");
+//   // З'єднати відсортовані літери в один рядок
+//   const result = sortedLetters.join("");
 
-  return result;
+//   return result;
+// }
+
+// // Приклад використання:
+// const s1 = "xyaabbbccccdefww";
+// const s2 = "xxxxyyyyabklmopq";
+
+// const result = longest(s1, s2);
+// console.log(result); // Виведе "abcdefklmopqwxy"
+
+/****** Залікова книжка ******/
+function getGrade(s1, s2, s3) {
+  const bal = (s1 + s2 + s3) / 3;
+  let value = "";
+  switch (true) {
+    case bal >= 90 && bal <= 100:
+      value = "A";
+      break;
+    case bal >= 80 && bal < 90:
+      value = "B";
+      break;
+    case bal >= 70 && bal <= 80:
+      value = "C";
+      break;
+    case bal >= 60 && bal <= 70:
+      value = "D";
+      break;
+    default:
+      value = "F";
+  }
+  return value;
 }
-
-// Приклад використання:
-const s1 = "xyaabbbccccdefww";
-const s2 = "xxxxyyyyabklmopq";
-
-const result = longest(s1, s2);
-console.log(result); // Виведе "abcdefklmopqwxy"
+console.log(getGrade(70, 70, 100));
