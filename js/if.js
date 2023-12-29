@@ -640,3 +640,56 @@ function duplicateCount(text) {
   return counter;
 }
 console.log(duplicateCount("aabbcde"));
+
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+  ordered > available
+    ? (message = "Not enough goods in stock!")
+    : (message = "The order is accepted, our manager will contact you");
+
+  // Change code above this line
+  return message;
+}
+switch (key) {
+  case value:
+    break;
+
+  default:
+    break;
+}
+
+function getShippingCost(country) {
+  let message;
+  // Change code below this line
+  switch (country) {
+    case China:
+      message = `Shipping to ${country} will cost 100 credits`;
+      break;
+    case Chile:
+      message = `Shipping to ${country} will cost 250 credits`;
+      break;
+    case Australia:
+      message = `Shipping to ${country} will cost 170 credits`;
+    default:
+      message = `Shipping to ${country} will cost 120 credits`;
+  }
+  // Change code above this line
+  return message;
+}
+
+function checkStorage(available, ordered) {
+  // Change code below this line
+  if (ordered === 0) {
+    return "Your order is empty!";
+  } else if (ordered > available) {
+    return "Your order is too large, not enough goods in stock!";
+  }
+  return "The order is accepted, our manager will contact you";
+}
+// Change code above this line
+const fruits = ["apple", "peach", "pear", "banana"];
+
+// Change code below this line
+const lastElementIndex = fruits[fruits.length - 1];
+const lastElement = fruits.length - 1;
