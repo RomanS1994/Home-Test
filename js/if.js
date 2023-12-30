@@ -639,25 +639,7 @@ function duplicateCount(text) {
   }
   return counter;
 }
-console.log(duplicateCount("aabbcde"));
-
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
-  ordered > available
-    ? (message = "Not enough goods in stock!")
-    : (message = "The order is accepted, our manager will contact you");
-
-  // Change code above this line
-  return message;
-}
-switch (key) {
-  case value:
-    break;
-
-  default:
-    break;
-}
+// console.log(duplicateCount("aabbcde"));
 
 function getShippingCost(country) {
   let message;
