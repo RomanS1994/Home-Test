@@ -718,3 +718,62 @@ function calculateTotalPrice(order) {
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
 /******  ******/
+function findLongestWord(string) {
+  const array = string.split(" ");
+  let stack = "";
+  //   console.log(array);
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (element.length > stack.length) {
+      stack = element;
+    }
+  }
+  return stack;
+}
+// console.log(findLongestWord("May the force be with you"));
+/******  ******/
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  for (let i = min; i <= max; i++) {
+    numbers.push(i);
+  }
+  // Change code above this line
+  return numbers;
+}
+// console.log(createArrayOfNumbers(14, 17));
+/******  ******/
+function filterArray(numbers, value) {
+  const arrNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      arrNumbers.push(numbers[i]);
+    }
+  }
+  return arrNumbers;
+}
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+/******  ******/
+function getCommonElements(array1, array2) {
+  let arrays = [];
+  for (let i = 0; i < array1.length; i++) {
+    const element = array1[i];
+    if (array2.includes(array1[i])) {
+      arrays.push(array1[i]);
+    }
+  }
+  return arrays;
+}
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+/******  ******/
+function getEvenNumbers(start, end) {
+  const arr = [];
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+console.log(getEvenNumbers(2, 5));
