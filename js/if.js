@@ -669,9 +669,52 @@ function checkStorage(available, ordered) {
   }
   return "The order is accepted, our manager will contact you";
 }
-// Change code above this line
-const fruits = ["apple", "peach", "pear", "banana"];
+/******  ******/
+function calculateEngravingPrice(message, pricePerWord) {
+  return message.split(" ").length * pricePerWord;
+}
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
 
-// Change code below this line
-const lastElementIndex = fruits[fruits.length - 1];
-const lastElement = fruits.length - 1;
+/******  ******/
+function slugify(title) {
+  const titles = title.toLowerCase();
+  return titles.split(" ");
+}
+// console.log(slugify("Arrays for begginers"));
+
+/******  ******/
+function makeArray(firstArray, secondArray, maxLength) {
+  // Change code below this line
+  const array = firstArray.concat(secondArray);
+  return array.slice(0, maxLength);
+  // Change code above this line
+}
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+
+function calculateTotal(number) {
+  // Change code below this line
+  let sum = 0;
+  for (let i = 0; i <= number; i++) {
+    // console.log(i);
+    sum += i;
+  }
+  return sum;
+  // Change code above this line
+}
+// console.log(calculateTotal(3));
+
+/******  ******/
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  for (let i = 0; i < order.length; i += 1) {
+    // console.log(order[i]);
+    total += order[i];
+  }
+  // Change code above this line
+  return total;
+}
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+/******  ******/
