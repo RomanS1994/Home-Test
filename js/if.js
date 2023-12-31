@@ -628,176 +628,176 @@
 // console.log(simpleMultiplication(14));
 
 /****** Підрахунок дублікатів ******/
-function duplicateCount(text) {
-  let counter = 0;
-  let array = "";
-  for (const letter of text) {
-    array += letter;
-    if (array.includes(letter)) {
-      counter++;
-    }
-  }
-  return counter;
-}
+// function duplicateCount(text) {
+//   let counter = 0;
+//   let array = "";
+//   for (const letter of text) {
+//     array += letter;
+//     if (array.includes(letter)) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
 // console.log(duplicateCount("aabbcde"));
 
-function getShippingCost(country) {
-  let message;
-  // Change code below this line
-  switch (country) {
-    case China:
-      message = `Shipping to ${country} will cost 100 credits`;
-      break;
-    case Chile:
-      message = `Shipping to ${country} will cost 250 credits`;
-      break;
-    case Australia:
-      message = `Shipping to ${country} will cost 170 credits`;
-    default:
-      message = `Shipping to ${country} will cost 120 credits`;
-  }
-  // Change code above this line
-  return message;
-}
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   switch (country) {
+//     case China:
+//       message = `Shipping to ${country} will cost 100 credits`;
+//       break;
+//     case Chile:
+//       message = `Shipping to ${country} will cost 250 credits`;
+//       break;
+//     case Australia:
+//       message = `Shipping to ${country} will cost 170 credits`;
+//     default:
+//       message = `Shipping to ${country} will cost 120 credits`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
 
-function checkStorage(available, ordered) {
-  // Change code below this line
-  if (ordered === 0) {
-    return "Your order is empty!";
-  } else if (ordered > available) {
-    return "Your order is too large, not enough goods in stock!";
-  }
-  return "The order is accepted, our manager will contact you";
-}
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } else if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+// }
 /******  ******/
-function calculateEngravingPrice(message, pricePerWord) {
-  return message.split(" ").length * pricePerWord;
-}
+// function calculateEngravingPrice(message, pricePerWord) {
+//   return message.split(" ").length * pricePerWord;
+// }
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
 
 /******  ******/
-function slugify(title) {
-  const titles = title.toLowerCase();
-  return titles.split(" ");
-}
+// function slugify(title) {
+//   const titles = title.toLowerCase();
+//   return titles.split(" ");
+// }
 // console.log(slugify("Arrays for begginers"));
 
 /******  ******/
-function makeArray(firstArray, secondArray, maxLength) {
-  // Change code below this line
-  const array = firstArray.concat(secondArray);
-  return array.slice(0, maxLength);
-  // Change code above this line
-}
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   const array = firstArray.concat(secondArray);
+//   return array.slice(0, maxLength);
+//   // Change code above this line
+// }
 // console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
 
-function calculateTotal(number) {
-  // Change code below this line
-  let sum = 0;
-  for (let i = 0; i <= number; i++) {
-    // console.log(i);
-    sum += i;
-  }
-  return sum;
-  // Change code above this line
-}
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let sum = 0;
+//   for (let i = 0; i <= number; i++) {
+//     // console.log(i);
+//     sum += i;
+//   }
+//   return sum;
+//   // Change code above this line
+// }
 // console.log(calculateTotal(3));
 
 /******  ******/
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Change code below this line
-  for (let i = 0; i < order.length; i += 1) {
-    // console.log(order[i]);
-    total += order[i];
-  }
-  // Change code above this line
-  return total;
-}
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     // console.log(order[i]);
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   return total;
+// }
 
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
 /******  ******/
-function findLongestWord(string) {
-  const array = string.split(" ");
-  let stack = "";
-  //   console.log(array);
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if (element.length > stack.length) {
-      stack = element;
-    }
-  }
-  return stack;
-}
+// function findLongestWord(string) {
+//   const array = string.split(" ");
+//   let stack = "";
+//   //   console.log(array);
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if (element.length > stack.length) {
+//       stack = element;
+//     }
+//   }
+//   return stack;
+// }
 // console.log(findLongestWord("May the force be with you"));
 /******  ******/
 
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
-  // Change code below this line
-  for (let i = min; i <= max; i++) {
-    numbers.push(i);
-  }
-  // Change code above this line
-  return numbers;
-}
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i++) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
 // console.log(createArrayOfNumbers(14, 17));
 /******  ******/
-function filterArray(numbers, value) {
-  const arrNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > value) {
-      arrNumbers.push(numbers[i]);
-    }
-  }
-  return arrNumbers;
-}
+// function filterArray(numbers, value) {
+//   const arrNumbers = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > value) {
+//       arrNumbers.push(numbers[i]);
+//     }
+//   }
+//   return arrNumbers;
+// }
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 /******  ******/
-function getCommonElements(array1, array2) {
-  let arrays = [];
-  for (let i = 0; i < array1.length; i++) {
-    const element = array1[i];
-    if (array2.includes(array1[i])) {
-      arrays.push(array1[i]);
-    }
-  }
-  return arrays;
-}
+// function getCommonElements(array1, array2) {
+//   let arrays = [];
+//   for (let i = 0; i < array1.length; i++) {
+//     const element = array1[i];
+//     if (array2.includes(array1[i])) {
+//       arrays.push(array1[i]);
+//     }
+//   }
+//   return arrays;
+// }
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 /******  ******/
-function getEvenNumbers(start, end) {
-  const arr = [];
-  for (let i = start; i <= end; i++) {
-    if (i % 2 === 0) {
-      arr.push(i);
-    }
-  }
-  return arr;
-}
+// function getEvenNumbers(start, end) {
+//   const arr = [];
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
 // console.log(getEvenNumbers(2, 5));
 /******  ******/
-const apartment = {
-  imgUrl: "https://via.placeholder.com/640x480",
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-  tags: ["premium", "promoted", "top"],
-  owner: {
-    name: "Henry",
-    phone: "982-126-1588",
-    email: "henry.carter@aptmail.com",
-  },
-};
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
 
-// Change code below this line
-const ownerName = apartment.owner.name;
-const ownerPhone = apartment.owner.phone;
-const ownerEmail = apartment.owner.email;
-const numberOfTags = apartment.tags.length;
-const firstTag = apartment.tags[0];
-const lastTag = apartment.tags[apartment.tags.length - 1];
-// Change code above this line
-// console.log(firstTag);
-console.log(lastTag);
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[apartment.tags.length - 1];
+// // Change code above this line
+// // console.log(firstTag);
+// console.log(lastTag);
