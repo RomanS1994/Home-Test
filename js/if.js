@@ -801,3 +801,32 @@
 // // Change code above this line
 // // console.log(firstTag);
 // console.log(lastTag);
+
+/******  ******/
+// function countProps(object) {
+//   let propCount = 0;
+
+//   // Change code below this line
+//   for (key in object) {
+//     propCount++;
+//   }
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }));
+
+/******  ******/
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for (let key of keys) {
+  values.push(key);
+}
+
+console.log(values);
+console.log(keys);
