@@ -669,6 +669,7 @@
 //   }
 //   return "The order is accepted, our manager will contact you";
 // }
+
 /******  ******/
 // function calculateEngravingPrice(message, pricePerWord) {
 //   return message.split(" ").length * pricePerWord;
@@ -731,8 +732,8 @@
 //   return stack;
 // }
 // console.log(findLongestWord("May the force be with you"));
-/******  ******/
 
+/******  ******/
 // function createArrayOfNumbers(min, max) {
 //   const numbers = [];
 //   // Change code below this line
@@ -743,6 +744,7 @@
 //   return numbers;
 // }
 // console.log(createArrayOfNumbers(14, 17));
+
 /******  ******/
 // function filterArray(numbers, value) {
 //   const arrNumbers = [];
@@ -754,6 +756,7 @@
 //   return arrNumbers;
 // }
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
+
 /******  ******/
 // function getCommonElements(array1, array2) {
 //   let arrays = [];
@@ -766,6 +769,7 @@
 //   return arrays;
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
 /******  ******/
 // function getEvenNumbers(start, end) {
 //   const arr = [];
@@ -777,6 +781,7 @@
 //   return arr;
 // }
 // console.log(getEvenNumbers(2, 5));
+
 /******  ******/
 // const apartment = {
 //   imgUrl: "https://via.placeholder.com/640x480",
@@ -816,17 +821,38 @@
 // console.log(countProps({ name: "Mango", age: 2 }));
 
 /******  ******/
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-const values = [];
-// Change code below this line
-const keys = Object.keys(apartment);
-for (let key of keys) {
-  values.push(key);
-}
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (let key of keys) {
+//   values.push(key);
+// }
 
-console.log(values);
-console.log(keys);
+// console.log(values);
+// console.log(keys);
+
+/******  ******/
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function calculateTotalPrice(productName) {
+  let result = 0;
+
+  for (let product of products) {
+    if ((product.name = productName)) {
+      result = product.price * product.quantity;
+    }
+  }
+
+  return result;
+}
+calculateTotalPrice("Radar");
