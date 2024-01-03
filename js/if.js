@@ -861,5 +861,14 @@
 
 // console.log(parseInt("asd sd s", 32));
 
-const qwe = "Z Ax";
-// console.log("ch :>> ", qwe.charCodeAt(0) - 64);
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+
+const { yesterday, today, tomorrow } = highTemperatures;
+const total = { yesterday } + { today } + { tomorrow };
+// Change code above this line
+const meanTemperature = total / 3;
