@@ -858,17 +858,50 @@
 // calculateTotalPrice("Radar");
 
 /******  ******/
-
 // console.log(parseInt("asd sd s", 32));
 
-const highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
-// Change code below this line
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
 
-const { yesterday, today, tomorrow } = highTemperatures;
-const total = { yesterday } + { today } + { tomorrow };
-// Change code above this line
-const meanTemperature = total / 3;
+// const { yesterday, today, tomorrow } = highTemperatures;
+// const total = { yesterday } + { today } + { tomorrow };
+// // Change code above this line
+// const meanTemperature = total / 3;
+
+/******  бібліотека Lodash через CDN******/
+// const vanillaOutput = document.querySelector(".output.vanilla");
+// const throttledOutput = document.querySelector(".output.throttled");
+// const eventCounter = {
+//   vanilla: 0,
+//   throttled: 0,
+// };
+
+// document.addEventListener("scroll", () => {
+//   eventCounter.vanilla += 1;
+//   vanillaOutput.textContent = eventCounter.vanilla;
+// });
+
+// document.addEventListener(
+//   "scroll",
+//   _.throttle(() => {
+//     eventCounter.throttled += 1;
+//     throttledOutput.textContent = eventCounter.throttled;
+//   }, 300)
+// );
+
+// const settings = {
+//   theme: "dark",
+//   isAuthenticated: true,
+//   options: [1, 2, 3],
+// };
+// localStorage.setItem("settings", JSON.stringify(settings));
+
+// const savedSettings = localStorage.getItem("settings");
+// console.log(savedSettings); // A string
+
+// const parsedSettings = JSON.parse(savedSettings);
+// console.log(parsedSettings); // Settings object

@@ -96,3 +96,35 @@
 // }
 
 // console.log(bmi(80, 1.8));
+
+/****** Кількість людей в автобусі ******/
+// var number = function (busStops) {
+//   let value = 0;
+//   for (const values of busStops) {
+//     value += values[0] - values[1];
+//   }
+
+//   return value;
+// };
+
+// console.log(
+//   number([
+//     [10, 0],
+//     [3, 5],
+//     [5, 8],
+//   ])
+// );
+
+/******  Обчислення суми факторіалів ******/
+// const numbers = [3, 5, 2, 4, 6];
+
+// const sumOfFactorials = numbers.reduce((accumulator, currentValue) => {
+//   return (accumulator += currentValue);
+// }, 0);
+
+// console.log("Сума факторіалів чисел:", sumOfFactorials);
+
+/****** Запишіть число в розгорнутому вигляді ******/
+function expandedForm(num) {}
+
+console.log(expandedForm(70304));
