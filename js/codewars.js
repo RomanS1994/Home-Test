@@ -124,7 +124,33 @@
 
 // console.log("Сума факторіалів чисел:", sumOfFactorials);
 
-/****** Запишіть число в розгорнутому вигляді ******/
-function expandedForm(num) {}
+/****** Array.diff ******/
+function arrayDiff(a, b) {
+  const array = [];
+  a.map((el) => {
+    if (el !== b[0]) {
+      array.push(el);
+    }
+  });
+  return array;
+}
+console.log(arrayDiff([1, 2, 2], [1]));
 
-console.log(expandedForm(70304));
+/****** варіант 2 ******/
+function arrayDiff(a, b) {
+  const array = [];
+  a.map((el) => {
+    if (!b.includes(el)) {
+      array.push(el);
+    }
+  });
+  return array;
+}
+console.log(arrayDiff([1, 2, 2], [1]));
+
+/****** варіант через фільтер ******/
+
+function arrayDiff(a, b) {
+  return a.filter((el) => !b.includes(el));
+}
+console.log(arrayDiff([1, 2, 2], [1]));
