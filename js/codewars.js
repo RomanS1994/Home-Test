@@ -173,17 +173,17 @@
 // console.log(stringNum);
 
 /****** Метод Тест ******/
-let testStr = "freeCodeCamp";
-let testRegex = /Code/;
-const add = testRegex.test(testStr);
-console.log(add);
+// let testStr = "freeCodeCamp";
+// let testRegex = /Code/;
+// const add = testRegex.test(testStr);
+// console.log(add);
 
-/******  Видаліть знаки оклику ******/
-function removeExclamationMarks(s) {
-  console.log(...s);
-  const symbol = /!/g;
-  return s.replace(symbol, "");
-}
+// /******  Видаліть знаки оклику ******/
+// function removeExclamationMarks(s) {
+//   console.log(...s);
+//   const symbol = /!/g;
+//   return s.replace(symbol, "");
+// }
 
 console.log(removeExclamationMarks("Hello World!"));
 
