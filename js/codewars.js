@@ -125,32 +125,77 @@
 // console.log("Сума факторіалів чисел:", sumOfFactorials);
 
 /****** Array.diff ******/
-function arrayDiff(a, b) {
-  const array = [];
-  a.map((el) => {
-    if (el !== b[0]) {
-      array.push(el);
-    }
-  });
-  return array;
-}
-console.log(arrayDiff([1, 2, 2], [1]));
+// function arrayDiff(a, b) {
+//   const array = [];
+//   a.map((el) => {
+//     if (el !== b[0]) {
+//       array.push(el);
+//     }
+//   });
+//   return array;
+// }
+// console.log(arrayDiff([1, 2, 2], [1]));
 
-/****** варіант 2 ******/
-function arrayDiff(a, b) {
-  const array = [];
-  a.map((el) => {
-    if (!b.includes(el)) {
-      array.push(el);
-    }
-  });
-  return array;
-}
-console.log(arrayDiff([1, 2, 2], [1]));
+// /****** варіант 2 ******/
+// function arrayDiff(a, b) {
+//   const array = [];
+//   a.map((el) => {
+//     if (!b.includes(el)) {
+//       array.push(el);
+//     }
+//   });
+//   return array;
+// }
+// console.log(arrayDiff([1, 2, 2], [1]));
 
-/****** варіант через фільтер ******/
+// /****** варіант через фільтер ******/
 
-function arrayDiff(a, b) {
-  return a.filter((el) => !b.includes(el));
+// function arrayDiff(a, b) {
+//   return a.filter((el) => !b.includes(el));
+// }
+// console.log(arrayDiff([1, 2, 2], [1]));
+
+/****** Перетворіть число на рядок! ******/
+// const numberToString = (num) => num.toString();
+// console.log(numberToString(67));
+
+/****** Найвищий і Найнижчий ******/
+// function highAndLow(numbersString) {
+//   const numbersArray = numbersString.split(" ");
+//   return `${Math.max(...numbersArray)} ${Math.min(...numbersArray)}`;
+// }
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+/****** ARR ******/
+// const stringNum = "8 3 -5 42 -1 0 0 -9 4 7 4 -4";
+// const arr = stringNum.split(" ");
+// console.log(...arr);
+// console.log(stringNum);
+
+/****** Метод Тест ******/
+let testStr = "freeCodeCamp";
+let testRegex = /Code/;
+const add = testRegex.test(testStr);
+console.log(add);
+
+/******  Видаліть знаки оклику ******/
+function removeExclamationMarks(s) {
+  console.log(...s);
+  const symbol = /!/g;
+  return s.replace(symbol, "");
 }
-console.log(arrayDiff([1, 2, 2], [1]));
+
+console.log(removeExclamationMarks("Hello World!"));
+
+/****** Серія для початківців №3 Сума чисел ******/
+function getSum(a, b) {
+  if (a === b) {
+    return a;
+  }
+  const start = Math.min(a, b);
+  const end = Math.max(a, b);
+
+  const sum = ((end - start + 1) * (start + end)) / 2;
+
+  return sum;
+}
