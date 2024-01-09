@@ -173,29 +173,40 @@
 // console.log(stringNum);
 
 /****** Метод Тест ******/
-let testStr = "freeCodeCamp";
-let testRegex = /Code/;
-const add = testRegex.test(testStr);
-console.log(add);
+// let testStr = "freeCodeCamp";
+// let testRegex = /Code/;
+// const add = testRegex.test(testStr);
+// console.log(add);
 
-/******  Видаліть знаки оклику ******/
-function removeExclamationMarks(s) {
-  console.log(...s);
-  const symbol = /!/g;
-  return s.replace(symbol, "");
-}
+// /******  Видаліть знаки оклику ******/
+// function removeExclamationMarks(s) {
+//   console.log(...s);
+//   const symbol = /!/g;
+//   return s.replace(symbol, "");
+// }
 
-console.log(removeExclamationMarks("Hello World!"));
+// console.log(removeExclamationMarks("Hello World!"));
 
 /****** Серія для початківців №3 Сума чисел ******/
-function getSum(a, b) {
-  if (a === b) {
-    return a;
-  }
-  const start = Math.min(a, b);
-  const end = Math.max(a, b);
+// function getSum(a, b) {
+//   if (a === b) {
+//     return a;
+//   }
+//   const start = Math.min(a, b);
+//   const end = Math.max(a, b);
 
-  const sum = ((end - start + 1) * (start + end)) / 2;
+//   const sum = ((end - start + 1) * (start + end)) / 2;
 
-  return sum;
+//   return sum;
+// }
+
+/****** Видалити пробіли в рядках ******/
+function noSpace(x) {
+  let repeatRegex = / /g;
+  return x.replaceAll(repeatRegex, "");
 }
+
+console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+
+/****** Array.diff ******/
+function arrayDiff(a, b) {}
