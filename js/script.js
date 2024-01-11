@@ -100,5 +100,4 @@ function handlerAddProduct(evt) {
   const productId = Number(product.dataset.productId);
 
   const currentProduct = instruments.find(({ id }) => id === productId);
-  console.log(currentProduct.img);
 }
