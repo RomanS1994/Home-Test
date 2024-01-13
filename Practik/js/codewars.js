@@ -201,12 +201,112 @@
 // }
 
 /****** Видалити пробіли в рядках ******/
-function noSpace(x) {
-  let repeatRegex = / /g;
-  return x.replaceAll(repeatRegex, "");
-}
+// function noSpace(x) {
+//   let repeatRegex = / /g;
+//   return x.replaceAll(repeatRegex, "");
+// }
 
-console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+// console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
 
 /****** Array.diff ******/
-function arrayDiff(a, b) {}
+// function arrayDiff(a, b) {}
+
+// ******  ****** //
+// function booleanToString(b) {
+//   return b.toString();
+// }
+// console.log(booleanToString(true));
+
+/****** Обчисліть ІМТ ******/
+// function calculateBMI(weight, height) {
+//   const bmi = weight / height ** 2;
+//   switch (true) {
+//     case bmi <= 18.5:
+//       console.log("Underweight");
+//       break;
+//     case bmi <= 25.0:
+//       console.log("Normal");
+//       break;
+//     case bmi <= 30.0:
+//       console.log("Overweight");
+//       break;
+//     default:
+//       console.log("Obese");
+//   }
+// }
+
+// calculateBMI(10, 1.8);
+
+/******  Фальшивий двійковий файл ******/
+// function fakeBin(x) {
+//   let result = "";
+//   for (let i = 0; i <= x.length; i++) {
+//     // console.log(x[i]);
+//     Number(x[i]) > 5 ? (result += "1") : (result += "0");
+//   }
+//   return result;
+// }
+
+// console.log(fakeBin("45385593107843568"));
+
+/****** Видаліть перший і останній символ ******/
+// function removeChar(str) {
+//   const arr = str.split("");
+//   arr.splice(0, 1);
+
+//   arr.splice(arr.length - 1, 1);
+
+//   return arr.join("");
+// }
+// console.log(removeChar("eloquent"));
+
+// const arr = [1, 3, 45, 5, 6];
+
+// function removeChar(str) {
+//   return str.slice(1, -1);
+// }
+// console.log(removeChar("eloquent"));
+
+/****** Одиниці і нулі ******/
+// const binaryArrayToNumber = (arr) => {
+//   const array = arr.reverse();
+//   // console.log(array);
+//   let result = 0;
+//   for (let i = 0; i <= array.length; i++) {
+//     if (array[i] === 1) {
+//       result += 2 ** i;
+//     }
+//   }
+//   return result;
+// };
+// console.log(binaryArrayToNumber([1, 1, 0, 1]));
+
+/****** варіант 2 ******/
+// const binaryArrayToNumber = (arr) => {
+//   const array = arr.reverse();
+//   // console.log(array);
+//   let result = 0;
+//   for (let i = 0; i <= array.length; i++) {
+//     if (array[i] === 1) {
+//       if (array.indexOf(array[i]) !== 0) {
+//         result += array[i] ** i;
+//       }
+//     }
+//   }
+//   return result;
+// };
+// console.log(binaryArrayToNumber([1, 1, 0, 1]));
+
+const binaryArrayToNumber = (arr) => {
+  const array = arr.reverse();
+  let result = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === 1) {
+      result += 2 ** i;
+    }
+  }
+
+  return result;
+};
+console.log(binaryArrayToNumber([1, 1, 1, 1]));
