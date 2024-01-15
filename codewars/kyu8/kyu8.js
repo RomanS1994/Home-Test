@@ -1,3 +1,10 @@
 import "./meanValue.js";
 import "./reversedSequence.js";
 import "./quarterOfTheYear.js";
+import "./sentenceSmash.js";
+import "./removingElements.js";
+import "./makeUpperCase.js";
+import "./convertAStringToANumber.js";
+import "./stringRepeat.js";
+import "./maximumAndMinimumValues.js";
+import "./reduceButGrow.js";
