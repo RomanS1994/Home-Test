@@ -10,23 +10,23 @@
 // }
 
 /****** var 2 ******/
-function removeLowest(arr) {
+
+function removeSmallest(arr) {
   if (!arr.length) {
     return [];
   }
 
   const minVal = Math.min(...arr);
   const minIndices = arr.reduce((indices, val, index) => {
-    console.log(indices, val, index);
     if (val === minVal) {
       indices.push(index);
     }
     return indices;
   }, []);
 
-  // Remove the element with the lowest value and the lowest index
-  arr.splice(minIndices[0], 1);
+  // Create a new array without the element with the lowest value and the lowest index
+  const newArr = arr.filter((_, index) => index !== minIndices[0]);
 
-  return arr;
+  return newArr;
 }
-console.log(removeLowest([5, 3, 2, 1, 4]));
+// console.log(removeSmallest([5, 3, 2, 1, 4]));
