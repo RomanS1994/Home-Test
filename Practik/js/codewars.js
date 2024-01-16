@@ -297,16 +297,16 @@
 // };
 // console.log(binaryArrayToNumber([1, 1, 0, 1]));
 
-const binaryArrayToNumber = (arr) => {
-  const array = arr.reverse();
-  let result = 0;
+// const binaryArrayToNumber = (arr) => {
+//   const array = arr.reverse();
+//   let result = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === 1) {
-      result += 2 ** i;
-    }
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 1) {
+//       result += 2 ** i;
+//     }
+//   }
 
-  return result;
-};
-console.log(binaryArrayToNumber([1, 1, 1, 1]));
+//   return result;
+// };
+// console.log(binaryArrayToNumber([1, 1, 1, 1]));

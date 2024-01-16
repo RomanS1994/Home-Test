@@ -8,3 +8,4 @@ import "./convertAStringToANumber.js";
 import "./stringRepeat.js";
 import "./maximumAndMinimumValues.js";
 import "./reduceButGrow.js";
+import "./checkForFactor.js";
