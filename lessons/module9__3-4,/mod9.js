@@ -47,12 +47,7 @@
   | Проміси
   |============================
 */
-/************ Практика ************/
-
-// const date = new Date();
-// console.log(date);
-
-/************ Практика ************/
+/************ Конспект ************/
 /*Change value of isSuccess variable to call resolve or reject
 const isSuccess = true;
 
@@ -121,24 +116,96 @@ promise.then();
 //   (error) => console.log(error)
 // );
 
-/************ Приклад 4 Метод  ************/
+/************ Приклад 4 Метод catch() ************/
 // Change value of isSuccess variable to call resolve or reject
-const isSuccess = true;
+// const isSuccess = true;
 
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    if (isSuccess) {
-      resolve("Success! Value passed to resolve function");
-    } else {
-      reject("Error! Error passed to reject function");
-    }
-  }, 2000);
-});
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
 
-promise
-  .then((value) => {
-    console.log(value);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// promise
+//   .then((value) => {
+//     console.log(value);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+/************ Приклад 5 метод finally() ************/
+// const isSuccess = true;
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+
+// promise
+//   .then((value) => console.log(value)) // "Success! Value passed to resolve function"
+//   .catch((error) => console.log(error)) // "Error! Error passed to reject function"
+//   .finally(() => console.log("Promise settled")); // "Promise settled"
+
+/************ Ланцюжки промісів ************/
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(2);
+//   }, 2000);
+// });
+
+// promise
+//   .then((value) => {
+//     console.log(value); // 5
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value); // 10
+//     return value * 3;
+//   })
+//   .then((value) => {
+//     console.log(value); // 30
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("Final task");
+//   });
+
+/************ Промісифікація функцій ************/
+// const fetchUserFromServer = (username, onSuccess, onError) => {
+//   console.log(`Fetching data for ${username}`);
+
+//   setTimeout(() => {
+//     // Change value of isSuccess variable to simulate request status
+//     const isSuccess = true;
+
+//     if (isSuccess) {
+//       onSuccess("success value");
+//     } else {
+//       onError("error");
+//     }
+//   }, 2000);
+// };
+
+// const onFetchSuccess = (user) => {
+//   console.log(user);
+// };
+
+// const onFetchError = (error) => {
+//   console.error(error);
+// };
+
+// fetchUserFromServer("Mango", onFetchSuccess, onFetchError);
+
+/************  Проміси lesson 1 ************/
