@@ -227,3 +227,65 @@ promise.then();
 // setInterval;
 // setImmediate;
 // requestAnimationFrame;
+
+/************ Практика ************/
+/**** 1 ****/
+// const promise = new Promise((resolve, reject) => {
+//   const number = Math.random() > 0.5;
+//   if (number) {
+//     resolve("ok");
+//   }
+//   reject("error");
+// });
+// console.log(promise);
+/**** 2 ****/
+// const promise = new Promise((resolve, reject) => {
+//   const number = Math.random() > 0.5;
+//   setInterval(() => {
+//     if (number) {
+//       resolve("ok");
+//     }
+//     reject("error");
+//   }, 2000);
+// });
+
+// setInterval(
+//   promise.then(
+//     (rezult) => console.log(rezult),
+//     (error) => console.log(error)
+//   ),
+//   3000
+// );
+
+// Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+
+// promise
+//   .then((value) => console.log(value)) // "Success! Value passed to resolve function"
+//   .catch((error) => console.log(error)) // "Error! Error passed to reject function"
+//   .finally(() => console.log("Promise settled")); // "Promise settled"
+
+const promise = new Promise((res, rej) => {
+  const value = 5;
+  setTimeout(() => {
+    if (value) {
+      res(value + 5);
+    } else {
+      rej("error");
+    }
+  }, 2000);
+});
+
+promise
+  .then((value) => value)
+  .then((value) => console.log(`%c${value + 5}`, "color: red;"));
