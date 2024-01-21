@@ -9,3 +9,5 @@ import "./stringRepeat.js";
 import "./maximumAndMinimumValues.js";
 import "./reduceButGrow.js";
 import "./checkForFactor.js";
+import "./switchItUp.js";
+import "./findTheFirst .js";

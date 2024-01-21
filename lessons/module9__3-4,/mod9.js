@@ -275,17 +275,19 @@ promise.then();
 //   .catch((error) => console.log(error)) // "Error! Error passed to reject function"
 //   .finally(() => console.log("Promise settled")); // "Promise settled"
 
-const promise = new Promise((res, rej) => {
-  const value = 5;
-  setTimeout(() => {
-    if (value) {
-      res(value + 5);
-    } else {
-      rej("error");
-    }
-  }, 2000);
-});
+// const promise = new Promise((res, rej) => {
+//   const value = 5;
+//   setTimeout(() => {
+//     if (value) {
+//       res(value + 5);
+//     } else {
+//       rej("error");
+//     }
+//   }, 2000);
+// });
 
-promise
-  .then((value) => value)
-  .then((value) => console.log(`%c${value + 5}`, "color: red;"));
+// promise.then((value) =>
+//   setInterval(() => {
+//     console.log(value);
+//   }, 1000)
+//
