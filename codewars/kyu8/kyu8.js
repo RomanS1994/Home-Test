@@ -11,3 +11,5 @@ import "./reduceButGrow.js";
 import "./checkForFactor.js";
 import "./switchItUp.js";
 import "./findTheFirst .js";
+import "./keepUpTheHoop.js";
+import "./howGoodAreYouReally.js";
