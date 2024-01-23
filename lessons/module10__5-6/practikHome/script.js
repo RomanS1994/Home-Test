@@ -1,0 +1,63 @@
+// ***************Практика*************** \\
+
+// Потрібно створити функціонал для отримання прогнозу погоди в місті.
+// Використай публічне API https://www.weatherapi.com/docs/
+// Використовуй ендпоінт Forecast для того, щоб отримати прогноз погоди на декілька днів.
+
+// Створи форму в яку користувач:
+// 1 вводить назву міста.
+// 2 обирає на яку кількість днів він хоче отримати прогноз погоди (3, 5 та 7 днів).
+// (Іноді параметр не працює в такому випадку можна зробити пошук на 1, 2 та 3 дні)
+// Приклад форми https://prnt.sc/kFmLOj6gBdv-
+
+// Після сабміту форми відмалюй картки з інформацією отриманою з бекенду.
+// Картка має містити відомості про:
+// 1 Зображення з погодою (icon)
+// 2 Текст з погодою (text)
+// 3 Дату (date)
+// 4 Середню температуру в Цельсія (avgtemp_c)
+// Приклад картки https://prnt.sc/h_p-A6Hty-i-
+
+// !!! ЗВЕРНИ УВАГУ ЩО API_KEY ПІСЛЯ РЕЄСТРАЦІЇ ВАЛІДНИЙ 21 ДЕНЬ !!!.
+
+const API_KEY = "6410346f89264d6e919165208231505";
+const BAZE_URL = "http://api.weatherapi.com/v1";
+
+const form = document.querySelector(".js-search-form");
+const list = document.querySelector(".js-list");
+
+form.addEventListener("submit", handlerSubmit);
+function handlerSubmit(evt) {
+  evt.preventDefault();
+}
+
+function createMarcup(arr) {
+  return arr
+    .map(() => {
+      `  
+    <li>
+        <img src="" alt="" />
+        <p></p>
+        <p></p>
+        <h1></h1>
+  </li>`;
+    })
+    .join("");
+}
+
+function serviceWeather() {
+  const API_KEY = "6410346f89264d6e919165208231505";
+  const BAZE_URL = "http://api.weatherapi.com/v1";
+
+  const params = new URLSearchParams({
+    key: API_KEY,
+    q: "london",
+    lang: "uk",
+    days: "2",
+  });
+
+  return fetch(`${BAZE_URL}/forecast.json?${params}`).then((res) =>
+    console.log(res)
+  );
+}
+serviceWeather();
