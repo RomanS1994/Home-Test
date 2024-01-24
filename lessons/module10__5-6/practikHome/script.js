@@ -32,20 +32,29 @@ function handlerSubmit(evt) {
 
   const { city, days } = evt.target.elements;
 
-  serviceWeather(city.value, days.value).then((data) => console.log(data));
+  serviceWeather(city.value, days.value).then(
+    (res) => (list.innerHTML = createMarcup(res.forecast.forecastday))
+  );
+
+  //   createMarcup(serviceWeather());
 }
 
 function createMarcup(arr) {
   return arr
-    .map(() => {
-      `  
-    <li>
-        <img src="" alt="" />
-        <p></p>
-        <p></p>
-        <h1></h1>
-  </li>`;
-    })
+    .map(
+      ({
+        date,
+        day: {
+          avgtemp_c,
+          condition: { text, icon },
+        },
+      }) => `<li class="weather-card">
+        <img class="weather-icon"  src="${icon}" alt="${text}" />
+        <p class="date">${date}</p>
+        <p class="weather-text">${text}</p>
+        <h1 class="temperature">${avgtemp_c}°C </h1>
+  </li>`
+    )
     .join("");
 }
 
