@@ -29,6 +29,10 @@ const list = document.querySelector(".js-list");
 form.addEventListener("submit", handlerSubmit);
 function handlerSubmit(evt) {
   evt.preventDefault();
+
+  const { city, days } = evt.target.elements;
+
+  serviceWeather(city.value, days.value).then((data) => console.log(data));
 }
 
 function createMarcup(arr) {
@@ -45,19 +49,20 @@ function createMarcup(arr) {
     .join("");
 }
 
-function serviceWeather() {
+function serviceWeather(city, days) {
   const API_KEY = "6410346f89264d6e919165208231505";
   const BAZE_URL = "http://api.weatherapi.com/v1";
 
   const params = new URLSearchParams({
     key: API_KEY,
-    q: "london",
+    q: city,
     lang: "uk",
-    days: "2",
+    days: days,
   });
 
-  return fetch(`${BAZE_URL}/forecast.json?${params}`).then((res) =>
-    console.log(res)
-  );
+  return fetch(`${BAZE_URL}/forecast.json?${params}`).then((res) => res.json());
 }
-serviceWeather();
+
+// //---------------------------------------------
+// записати дані в Html
+// підключити класи
