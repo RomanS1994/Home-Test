@@ -14,3 +14,5 @@ import "./findTheFirst .js";
 import "./keepUpTheHoop.js";
 import "./howGoodAreYouReally.js";
 import "./countingSheep.js";
+import "./basicMathematicalOperations.js";
+import "./centuryFromYear.js";

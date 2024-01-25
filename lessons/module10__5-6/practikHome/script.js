@@ -35,8 +35,6 @@ function handlerSubmit(evt) {
   serviceWeather(city.value, days.value).then(
     (res) => (list.innerHTML = createMarcup(res.forecast.forecastday))
   );
-
-  //   createMarcup(serviceWeather());
 }
 
 function createMarcup(arr) {
@@ -73,5 +71,4 @@ function serviceWeather(city, days) {
 }
 
 // //---------------------------------------------
-// записати дані в Html
-// підключити класи
+// Обробити варіант помилки в кетч
