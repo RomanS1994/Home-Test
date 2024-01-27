@@ -16,3 +16,5 @@ import "./howGoodAreYouReally.js";
 import "./countingSheep.js";
 import "./basicMathematicalOperations.js";
 import "./centuryFromYear.js";
+import "./invertValues.js";
+import "./sumWithoutHighestAndlowestNumber.js";

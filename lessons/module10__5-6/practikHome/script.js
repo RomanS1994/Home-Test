@@ -47,7 +47,7 @@ function createMarcup(arr) {
           condition: { text, icon },
         },
       }) => `<li class="weather-card">
-        <img class="weather-icon"  src="${icon}" alt="${text}" />
+        <img class="weather-icon"  src="${icon}" alt="${text}" height="50" width="50"/>
         <p class="date">${date}</p>
         <p class="weather-text">${text}</p>
         <h1 class="temperature">${avgtemp_c}°C </h1>
