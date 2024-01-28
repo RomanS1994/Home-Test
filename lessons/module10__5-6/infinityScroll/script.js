@@ -61,14 +61,14 @@ function createMarcup(arr) {
     .map(
       ({ poster_path, original_title, vote_average, release_date }) =>
         `
-    <li class="movie-card">
-    <img src="https://image.tmdb.org/t/p/w300${poster_path}" alt="${original_title}" />
-   <div class="movie-info"> 
-   <h2>${original_title}</h2>
-   <p>Release Date: ${release_date}</p>
-   <p>Vote Averge: ${vote_average}</p>
-   </div>
-  </li>`
+      <li class="movie-card">
+      <img src="https://image.tmdb.org/t/p/w300${poster_path}" alt="${original_title}" />
+     <div class="movie-info"> 
+     <h2>${original_title}</h2>
+     <p>Release Date: ${release_date}</p>
+     <p>Vote Averge: ${vote_average}</p>
+     </div>
+    </li>`
     )
     .join("");
 }
