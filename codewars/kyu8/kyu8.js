@@ -18,3 +18,5 @@ import "./basicMathematicalOperations.js";
 import "./centuryFromYear.js";
 import "./invertValues.js";
 import "./sumWithoutHighestAndlowestNumber.js";
+import "./sumOfPositive.js";
+import "./findmultiplesOfaNumber.js";

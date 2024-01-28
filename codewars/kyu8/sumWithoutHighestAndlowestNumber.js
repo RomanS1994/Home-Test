@@ -15,4 +15,4 @@ function sumArray(array) {
 
   return sum;
 }
-console.log(sumArray([0, 1, 6, 10, 10]));
+// console.log(sumArray([0, 1, 6, 10, 10]));
