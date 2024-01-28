@@ -11,18 +11,52 @@
 // 1 Кнопка "Load More"
 // 2 Infinity scroll (https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 // const API_KEY = "345007f9ab440e5b86cef51be6397df1";
-
-/************ Кнопка "Load More" ************/
-
+//---------------------------------------------
+/************ Infinity scroll ************/
 const selector = {
   container: document.querySelector(".js-movie-list"),
-  loadMore: document.querySelector(".js-load-more"),
+  guard: document.querySelector(".js-guard"),
 };
+
+const options = {
+  root: null,
+  rootMargin: "600px",
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver(handlerLoadMore, options);
 
 let page = 1;
 
-selector.loadMore.addEventListener("click", handlerLoadMore);
-
+function createMarcup(arr) {
+  return arr
+    .map(
+      ({ poster_path, original_title, vote_average, release_date }) =>
+        `
+          <li class="movie-card">
+          <img src="https://image.tmdb.org/t/p/w300${poster_path}" alt="${original_title}" />
+         <div class="movie-info"> 
+         <h2>${original_title}</h2>
+         <p>Release Date: ${release_date}</p>
+         <p>Vote Averge: ${vote_average}</p>
+         </div>
+        </li>`
+    )
+    .join("");
+}
+serviceMovie()
+  .then((data) => {
+    selector.container.insertAdjacentHTML(
+      "beforeend",
+      createMarcup(data.results)
+    );
+    if (data.page < data.total_pages) {
+      observer.observe(selector.guard);
+    }
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 function serviceMovie(page = 1) {
   const BASE_URL = "https://api.themoviedb.org";
   const END_POINT = "/3/trending/movie/week";
@@ -42,48 +76,20 @@ function serviceMovie(page = 1) {
   });
 }
 
-serviceMovie(1)
-  .then((data) => {
-    selector.container.insertAdjacentHTML(
-      "beforeend",
-      createMarcup(data.results)
-    );
-    if (data.page < data.total_pages) {
-      selector.loadMore.classList.replace("load-more-hidden", "load-more");
-    }
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-function createMarcup(arr) {
-  return arr
-    .map(
-      ({ poster_path, original_title, vote_average, release_date }) =>
-        `
-      <li class="movie-card">
-      <img src="https://image.tmdb.org/t/p/w300${poster_path}" alt="${original_title}" />
-     <div class="movie-info"> 
-     <h2>${original_title}</h2>
-     <p>Release Date: ${release_date}</p>
-     <p>Vote Averge: ${vote_average}</p>
-     </div>
-    </li>`
-    )
-    .join("");
-}
-
-function handlerLoadMore() {
-  page += 1;
-  serviceMovie(page).then((data) => {
-    selector.container.insertAdjacentHTML(
-      "beforeend",
-      createMarcup(data.results)
-    );
-    if (data.page >= 500) {
-      selector.loadMore.classList.replace("load-more", "load-more-hidden");
+function handlerLoadMore(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log("yes");
+      page++;
+      serviceMovie(page).then((data) => {
+        selector.container.insertAdjacentHTML(
+          "beforeend",
+          createMarcup(data.results)
+        );
+        if (data.page >= 500) {
+          observer.unobserve(selector.guard);
+        }
+      });
     }
   });
 }
-//---------------------------------------------
-/************ Infinity scroll ************/
