@@ -22,3 +22,4 @@ import "./sumOfPositive.js";
 import "./findmultiplesOfaNumber.js";
 import "./setAlarm.js";
 import "./catYearsDogYears.js";
+import "./reversedStrings.js";

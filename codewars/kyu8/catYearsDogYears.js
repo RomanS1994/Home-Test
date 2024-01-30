@@ -10,4 +10,7 @@ var humanYearsCatYearsDogYears = function (humanYears) {
   }
   return arr;
 };
-console.log(humanYearsCatYearsDogYears(2));
+// console.log(humanYearsCatYearsDogYears(2));
+
+/************  ************/
+//---------------------------------------------
