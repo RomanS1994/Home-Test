@@ -15,7 +15,7 @@ const url = "https://jsonplaceholder.typicode.com/posts/3";
 
 // ******************** POST - CREATE ******************** \\
 
-const post = {
-  title: "Group 2",
-  bodi,
-};
+// const post = {
+//   title: "Group 2",
+//   bodi,
+// };

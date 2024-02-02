@@ -23,3 +23,5 @@ import "./findmultiplesOfaNumber.js";
 import "./setAlarm.js";
 import "./catYearsDogYears.js";
 import "./reversedStrings.js";
+import "./grasshopper-MessiGoalsFunction.js";
+import "./theFeastOfManyBeasts.js";
