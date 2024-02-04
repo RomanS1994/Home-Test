@@ -25,3 +25,4 @@ import "./catYearsDogYears.js";
 import "./reversedStrings.js";
 import "./grasshopper-MessiGoalsFunction.js";
 import "./theFeastOfManyBeasts.js";
+import "./doubleChar.js";
