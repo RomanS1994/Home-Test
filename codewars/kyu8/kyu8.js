@@ -26,3 +26,4 @@ import "./reversedStrings.js";
 import "./grasshopper-MessiGoalsFunction.js";
 import "./theFeastOfManyBeasts.js";
 import "./doubleChar.js";
+import "./practics.js";
