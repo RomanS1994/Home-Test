@@ -48,3 +48,38 @@
 // } catch (error) {}
 
 /*********** Практика ************/
+// const LS_KEY = "Array of names";
+// const LS_KEY2 = "Array 2";
+// const name1 = ["Allice", "Kate", 5];
+// const name2 = ["Ron", "Ron", "Ron"];
+
+// localStorage.setItem(LS_KEY, name1);
+// localStorage.setItem(LS_KEY2, JSON.stringify(name2));
+// const values1 = localStorage.getItem(LS_KEY);
+// const values2 = localStorage.getItem(LS_KEY2);
+// console.log(values1);
+// console.log(JSON.parse(values1));
+// console.log(values2);
+// console.log(JSON.parse(values2));
+
+const dog = {
+  names: "Mango",
+  age: 3,
+  isGoodBoy: true,
+  bark() {
+    console.log("Woof!");
+  },
+};
+
+const LS_KEY = "LS DOG";
+
+localStorage.setItem(LS_KEY, JSON.stringify(dog));
+const value = JSON.parse(localStorage.getItem(LS_KEY));
+
+const { age, isGoodBoy, names } = value;
+console.log(toString(4));
+
+console.log(age);
+
+const result = 5 - value.age;
+console.log(result);
