@@ -67,7 +67,7 @@ const dog = {
   age: 3,
   isGoodBoy: true,
   bark() {
-    console.log("Woof!");
+    // console.log("Woof!");
   },
 };
 
@@ -77,9 +77,9 @@ localStorage.setItem(LS_KEY, JSON.stringify(dog));
 const value = JSON.parse(localStorage.getItem(LS_KEY));
 
 const { age, isGoodBoy, names } = value;
-console.log(toString(4));
+// console.log(toString(4));
 
-console.log(age);
+// console.log(age);
 
 const result = 5 - value.age;
-console.log(result);
+// console.log(result);
