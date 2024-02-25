@@ -2,7 +2,7 @@
 
 <a id="top"></a>
 
-# [English excellence](https://github.com/tatidan/ms-htmlcss-teamproject-2023)
+# [homePractice](https://github.com/tatidan/ms-htmlcss-teamproject-2023)
 
 <a href="#1"><img src="https://img.shields.io/badge/Опис Проeкту-512BD4?style=for-the-badge"/></a> <a href="#2"><img src="https://img.shields.io/badge/Функції-ECD53F?style=for-the-badge"/></a> <a href="#3"><img src="https://img.shields.io/badge/Підготовка до роботи-007054?style=for-the-badge"/></a> <a href="#4"><img src="https://img.shields.io/badge/Застосовані технології-A9225C?style=for-the-badge"/></a>
 
