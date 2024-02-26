@@ -32,5 +32,3 @@ String.prototype.sortLetters = function () {
 var isAnagram = function (test, original) {
   return test.sortLetters() == original.sortLetters();
 };
-
-console.dir(String);

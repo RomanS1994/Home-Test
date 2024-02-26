@@ -29,3 +29,4 @@ import "./doubleChar.js";
 import "./practics.js";
 import "./convertNumber.js";
 import "./grasshopperDebugsayHello.js";
+import "./welcome.js";
