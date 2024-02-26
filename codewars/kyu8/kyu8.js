@@ -28,3 +28,4 @@ import "./theFeastOfManyBeasts.js";
 import "./doubleChar.js";
 import "./practics.js";
 import "./convertNumber.js";
+import "./grasshopperDebugsayHello.js";
