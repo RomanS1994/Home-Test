@@ -31,3 +31,4 @@ import "./convertNumber.js";
 import "./grasshopperDebugsayHello.js";
 import "./welcome.js";
 import "./vowelRemover.js";
+import "./isTheStringUppercase.js";
