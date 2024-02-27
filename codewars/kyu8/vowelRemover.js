@@ -14,6 +14,6 @@ function shortcut(string) {
   return result;
 }
 
-console.log(shortcut("hello"));
+// console.log(shortcut("hello"));
 
 //a, e, i, o, u
