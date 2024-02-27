@@ -21,4 +21,4 @@ function greet(language) {
 
   return languages[language] || "Welcome";
 }
-console.log("greet('dutch') :>> ", greet("dutch"));
+// console.log("greet('dutch') :>> ", greet("dutch"));
