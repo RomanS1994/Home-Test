@@ -32,3 +32,5 @@ import "./grasshopperDebugsayHello.js";
 import "./welcome.js";
 import "./vowelRemover.js";
 import "./isTheStringUppercase.js";
+import "./findtheSmallestIntegerIntheArray.js";
+
