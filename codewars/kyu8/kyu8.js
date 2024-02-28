@@ -33,4 +33,4 @@ import "./welcome.js";
 import "./vowelRemover.js";
 import "./isTheStringUppercase.js";
 import "./findtheSmallestIntegerIntheArray.js";
-
+import "./getCharacterFromASCIIValue.js";
