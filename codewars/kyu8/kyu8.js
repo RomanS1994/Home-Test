@@ -34,3 +34,7 @@ import "./vowelRemover.js";
 import "./isTheStringUppercase.js";
 import "./findtheSmallestIntegerIntheArray.js";
 import "./getCharacterFromASCIIValue.js";
+import "./nameShuffler.js";
+import ".//grasshopperMessiGoals.js";
+import "./noZerosForHeros.js";
+import "./twiceAsOld.js";
