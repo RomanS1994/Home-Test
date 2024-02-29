@@ -1,5 +1,4 @@
 function asciiSymbol(number) {
-  // Використовуємо метод String.fromCharCode() для отримання символу ASCII за його числовим значенням
   return String.fromCharCode(number);
 }
 
