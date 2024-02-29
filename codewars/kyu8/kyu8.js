@@ -38,3 +38,5 @@ import "./nameShuffler.js";
 import ".//grasshopperMessiGoals.js";
 import "./noZerosForHeros.js";
 import "./twiceAsOld.js";
+import "./reversingWordsInaString.js";
+import "./grasshopperSummation.js";
