@@ -40,3 +40,4 @@ import "./noZerosForHeros.js";
 import "./twiceAsOld.js";
 import "./reversingWordsInaString.js";
 import "./grasshopperSummation.js";
+import "./larioandMuigiPipeProblem.js";

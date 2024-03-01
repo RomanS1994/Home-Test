@@ -7,5 +7,3 @@ var summation = function (num) {
 };
 
 // console.log(summation(3));
-
-console.log(String);
