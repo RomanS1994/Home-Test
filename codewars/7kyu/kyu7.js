@@ -6,3 +6,5 @@ import "./binaryAddition.js";
 import "./anagramDetection.js";
 import "./friendOrFoe.js";
 import "./squareEveryDigit.js";
+import "./sortArrayByStringlength.js";
+import "./findTheNextPerfectSquare.js";
