@@ -41,3 +41,6 @@ import "./twiceAsOld.js";
 import "./reversingWordsInaString.js";
 import "./grasshopperSummation.js";
 import "./larioandMuigiPipeProblem.js";
+import "./abbreviateaTwoWord Name.js";
+import "./keepHydrated.js";
+import "./allStarCodeChallenge.js";
