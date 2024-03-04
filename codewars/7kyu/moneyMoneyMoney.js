@@ -13,4 +13,4 @@ function calculateYears(principal, interest, tax, desired) {
   return years;
 }
 
-console.log(calculateYears(1000, 0.05, 0.18, 1100));
+// console.log(calculateYears(1000, 0.05, 0.18, 1100));
