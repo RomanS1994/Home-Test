@@ -3,4 +3,4 @@ function isPalindrome(x) {
 
   return arr === x.toUpperCase();
 }
-console.log(isPalindrome("Madam"));
+// console.log(isPalindrome("Madam"));

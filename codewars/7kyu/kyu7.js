@@ -8,3 +8,4 @@ import "./friendOrFoe.js";
 import "./squareEveryDigit.js";
 import "./sortArrayByStringlength.js";
 import "./findTheNextPerfectSquare.js";
+import "./moneyMoneyMoney.js";
