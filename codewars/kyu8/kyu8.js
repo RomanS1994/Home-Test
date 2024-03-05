@@ -48,3 +48,4 @@ import "./thinkful-LogicDrillsTrafficlight.js";
 import "./isItAPalindrome.js";
 import "./expressionsMatter.js";
 import "./willThereBeEnoughSpace.js";
+import "./student'sFinalGrade.js";
