@@ -16,3 +16,4 @@ function finalGrade(exam, projects) {
   return grade;
 }
 console.log(finalGrade(100, 12));
+/************  ************/
